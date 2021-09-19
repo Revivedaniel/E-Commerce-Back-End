@@ -8,7 +8,7 @@ ProductTag.init(
   {
     id: {
       //making the type of data stored in this column an integer
-      type: DataType.INTEGER,
+      type: DataTypes.INTEGER,
       //NOT NULL
       allowNull: false,
       //Primary Key
