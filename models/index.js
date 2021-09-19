@@ -20,14 +20,14 @@ Product.belongsToMany(Tag, {
     unique: false
   },
   //Defining the alias for the linked tables
-  as: "product_tag"
+  as: "tag"
 });
 // Tags belongToMany Products (through ProductTag)
 Tag.belongsToMany(Product, {
   //Defining the third table that this connection is used in
   through: {
     model: ProductTag,
-    unique: FontFaceSetLoadEvent
+    unique: false
   },
   //Defining the alias for the linked tables
   as: "product"
